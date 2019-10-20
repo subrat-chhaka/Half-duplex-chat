@@ -28,3 +28,5 @@ print("Sender is ready and listening")
 clientsocket, address = serversocket.accept()
 print("Reciever " + str(address) + " connected")
 client(clientsocket, address)
+
+#avoid taking direct input in threaded environment. sayan hazra
