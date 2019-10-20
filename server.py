@@ -3,7 +3,7 @@ from threading import *
 
 serversocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 host = "localhost"
-port = 8000
+port = 9014
 
 serversocket.bind((host, port))
 
@@ -23,10 +23,8 @@ class client(Thread):
 
 
 serversocket.listen(5)
-print("Sender is ready and listening")
+print("Sender is ready to listen")
     
 clientsocket, address = serversocket.accept()
 print("Reciever " + str(address) + " connected")
 client(clientsocket, address)
-
-#avoid taking direct input in threaded environment. sayan hazra
