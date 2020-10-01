@@ -12,3 +12,4 @@ while (True):
     s.send(str.encode())
 
 s.close()
+//client file purposed
