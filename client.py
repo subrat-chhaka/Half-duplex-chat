@@ -8,6 +8,8 @@ s.connect((host, port))
 while (True):
     data1 = s.recv(1024).decode()
     print("Server : "+ data1)
+    print("")
+    //remove above line
     str = input("  --> ")
     s.send(str.encode())
 
