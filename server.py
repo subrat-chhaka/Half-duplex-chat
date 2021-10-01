@@ -20,6 +20,8 @@ class client(Thread):
             clientsocket.send(r.encode())
             msg = clientsocket.recv(1024).decode()
             print("client : " + str(msg))
+            print(" ****** ")
+            #Redundant print statement
 
 
 serversocket.listen(5)
